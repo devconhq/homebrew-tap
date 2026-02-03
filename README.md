@@ -1,6 +1,6 @@
-# Homebrew Tap for DevCon
+# Homebrew Tap for DevConHQ Tools
 
-This tap provides Homebrew formulae for DevCon - Your Mission-Critical Dev Environment Manager.
+This tap provides Homebrew formulae for DevCon - Your Mission-Critical Dev Environment Manager and other upcoming tools.
 
 ## Installation
 
@@ -18,6 +18,7 @@ brew install devconhq/tap/devcon
 ## Requirements
 
 DevCon requires a container runtime:
+
 - Docker Desktop, or
 - Apple's Container Runtime (macOS 15+)
 
