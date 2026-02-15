@@ -1,38 +1,38 @@
 class Devcon < Formula
   desc "DevCon One - Your Mission-Critical Dev Environment Manager"
   homepage "https://github.com/devconhq/devcon"
-  version "0.2.6"
+  version "0.2.7"
   license "MIT"
 
   on_macos do
     on_arm do
-      url "https://github.com/devconhq/devcon/releases/download/v0.2.6/devcon-macos-arm64"
-      sha256 "01b59c608ef4cb3a1b1453610c13c63d3d0153631058e114062d52a8608d1b04"
+      url "https://github.com/devconhq/devcon/releases/download/v0.2.7/devcon-macos-arm64"
+      sha256 "66f64236f1db69a6d8ef4f3199ec36157fbb8397cc8e0c62f4ea293af7b5c317"
     end
 
     on_intel do
-      url "https://github.com/devconhq/devcon/releases/download/v0.2.6/devcon-macos-universal"
-      sha256 "c0666763fa5b08188350bb9b21eaefcf892ac5160a95e59dd1968239f7552310"
+      url "https://github.com/devconhq/devcon/releases/download/v0.2.7/devcon-macos-universal"
+      sha256 "2ce22dff6deecbdfb45b5ce44e76e2f999b69ab88abcef3c38466c979eae84d0"
     end
   end
 
   on_linux do
     on_intel do
-      url "https://github.com/devconhq/devcon/releases/download/v0.2.6/devcon-ubuntu-x86_64"
-      sha256 "bca1b852e6a866f328038fa265995d2a75ae7ec7e69d625b31d277bd6c44545b"
+      url "https://github.com/devconhq/devcon/releases/download/v0.2.7/devcon-linux-x86_64"
+      sha256 "3e8e2e9fecea6c90243ee98ef73dd848587a77a8caa861db32a942b44c3649a6"
     end
 
     on_arm do
-      url "https://github.com/devconhq/devcon/releases/download/v0.2.6/devcon-ubuntu-arm64"
-      sha256 "415cce201a62c5b2ebe5020a67c85245a3a47603adddf8a62dc8e9fae20076c2"
+      url "https://github.com/devconhq/devcon/releases/download/v0.2.7/devcon-linux-arm64"
+      sha256 "a797c7a475b2e1bcaee7b0959a2a729733f02589e1f86fbbaf39fb01640ed4f2"
     end
   end
 
   def install
     bin.install "devcon-macos-arm64" => "devcon" if OS.mac? && Hardware::CPU.arm?
     bin.install "devcon-macos-universal" => "devcon" if OS.mac? && Hardware::CPU.intel?
-    bin.install "devcon-ubuntu-x86_64" => "devcon" if OS.linux? && Hardware::CPU.intel?
-    bin.install "devcon-ubuntu-arm64" => "devcon" if OS.linux? && Hardware::CPU.arm?
+    bin.install "devcon-linux-x86_64" => "devcon" if OS.linux? && Hardware::CPU.intel?
+    bin.install "devcon-linux-arm64" => "devcon" if OS.linux? && Hardware::CPU.arm?
   end
 
   def caveats
