@@ -35,6 +35,14 @@ class Devcon < Formula
     bin.install "devcon-linux-arm64" => "devcon" if OS.linux? && Hardware::CPU.arm?
   end
 
+  service do
+    run [opt_bin/"devcon", "serve"]
+    keep_alive true
+    working_dir var
+    log_path var/"log/devcon-serve.log"
+    error_log_path var/"log/devcon-serve.log"
+  end
+
   def caveats
     <<~EOS
       DevCon requires a container runtime to function properly.
