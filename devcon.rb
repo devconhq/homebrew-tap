@@ -1,30 +1,30 @@
 class Devcon < Formula
   desc "DevCon One - Your Mission-Critical Dev Environment Manager"
   homepage "https://github.com/devconhq/devcon"
-  version "0.3.1"
+  version "V0.3.2"
   license "MIT"
 
   on_macos do
     on_arm do
-      url "https://github.com/devconhq/devcon/releases/download/v0.3.1/devcon-macos-arm64"
-      sha256 "cde6e93d3f9a05784d5c58590978438f7de3f2ed9e234a0e6a3c8eef1996b96a"
+      url "https://github.com/devconhq/devcon/releases/download/vV0.3.2/devcon-macos-arm64"
+      sha256 "2ad22dccdd58a026a4114043000f3f792f5d4230194deb70c0e0f1cbfb7f1ade"
     end
 
     on_intel do
-      url "https://github.com/devconhq/devcon/releases/download/v0.3.1/devcon-macos-universal"
-      sha256 "6d38c02d13c9e5ee5fd1f7b0487c56178400f0d2cd3a163f8d8897f8b51b8b4d"
+      url "https://github.com/devconhq/devcon/releases/download/vV0.3.2/devcon-macos-universal"
+      sha256 "2bd036dd60ee359d0c4bca7f921fce05c45376ce265347f0d7f246e458a2d09a"
     end
   end
 
   on_linux do
     on_intel do
-      url "https://github.com/devconhq/devcon/releases/download/v0.3.1/devcon-linux-x86_64"
-      sha256 "a9c6a2e401b8883a2d233be4019914775bb450f50a31c3a023c87a93191401a1"
+      url "https://github.com/devconhq/devcon/releases/download/vV0.3.2/devcon-linux-x86_64"
+      sha256 "40cd1d86372965b8805477880f020f4ca665ae1dfbed2a73d3055f3e031becd9"
     end
 
     on_arm do
-      url "https://github.com/devconhq/devcon/releases/download/v0.3.1/devcon-linux-arm64"
-      sha256 "3e948098ea7d57618553c705901003ed80f6bca0fda517ff777fc3f557edae82"
+      url "https://github.com/devconhq/devcon/releases/download/vV0.3.2/devcon-linux-arm64"
+      sha256 "cc620d4fe5144496c290ec60737a2f9c8f85ecfb3a758a9e6e868bb86b9b9f52"
     end
   end
 
